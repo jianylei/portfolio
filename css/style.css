@@ -256,7 +256,7 @@ button{
 .about-text .timeline::before{
     content: "";
     position: absolute;
-    height: 100px;
+    height: 100%;
     width: 1px;
     left: 5px;
     background-color: var(--primary-color);
