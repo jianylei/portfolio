@@ -9,7 +9,7 @@
 - [Tech](#tech)
 - [Screenshots](#screenshots)
 ## Introduction
-Responsive Card style portfolio built to showcase projects.
+Responsive card style portfolio built to showcase projects.
 ## Tech
 Vanilla Javascript, HTML, CSS
 
