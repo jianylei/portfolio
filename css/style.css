@@ -1,16 +1,18 @@
 /* Variables */
 :root{
-    --primary-color: #e02f6b;
+    --primary-color: #e94079;
     --blue: #0000ff;
-    --blue-dark: #18293c;
-    --orange: #ffa500;
+    --white: rgba(255, 255, 255, 0.87);
     --green-yellow: #cddc39;
     --pink-yellow: #efa2b4;
-    --cyan-lign: #aef1ee;
+    --cyan-light: #aef1ee;
+    --blue-alpha-60: rgba(61, 61, 211, 0.63);
     --white-alpha-40: rgba(255, 255, 255, 0.40);
     --white-alpha-25: rgba(255, 255, 255, 0.25);
     --gray-alpha-40: rgba(184, 184, 184, 0.4);
     --gray-alpha-25: rgba(184, 184, 184, 0.25);
+    --black-alpha-85: rgba(36, 36, 36, 0.85);
+    --black-alpha-25: rgba(36, 36, 36, 0.25);
     --backdrop-filter-blur: blur(5px);
 }
 /* Fonts */
@@ -28,12 +30,12 @@
 }
 body{
     min-height: 100vh;
-    background-image: linear-gradient(to bottom right, var(--pink-yellow), var(--cyan-lign));
+    background-image: linear-gradient(to bottom right, var(--blue-alpha-60), var(--cyan-light));
     background-attachment: fixed;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    color: var(--blue-dark);
+    color: var(--white);
     line-height: 1.5;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
@@ -70,7 +72,7 @@ ul{
     list-style: none;
 }
 section{
-    background-color: rgba(255, 255, 255, 0.45);
+    background-color: var(--black-alpha-85);
     border: 1px solid var(--white-alpha-40);
     min-height: 90vh;
     border-radius: 30px;
@@ -119,17 +121,6 @@ section{
     text-align: center;
 }
 
-/* Scroll */
-::-webkit-scrollbar{
-    width: 5px;
-}
-::-webkit-scrollbar-track{
-    background-color: white;
-}
-::-webkit-scrollbar-thumb{
-    background-color: var(--primary-color);
-}
-
 /* Buttons */
 button{
     font-family: inherit;
@@ -138,7 +129,7 @@ button{
 .btn{
     line-height: 1.5;
     background-color: transparent;
-    border: 2px solid rgba(224, 47, 106, 0.40);
+    border: 2px solid var(--primary-color);
     padding: 10px 28px;
     display: inline-block;
     border-radius: 30px;
@@ -150,26 +141,15 @@ button{
     cursor: pointer;
     user-select: none;
     position: relative;
-    overflow: hidden;
     vertical-align: middle;
     transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
-.btn::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 0%;
-    background-color: var(--primary-color);
-    z-index: -2;
-    transition: width 0.3s ease;
-}
-.btn:hover::before{
-    width: 100%;
-}
-.btn:hover{
-    color: white;
+@media (hover: hover) {
+    .btn:hover{
+        color: white;
+        background-color: var(--primary-color);
+    }
 }
 
 /* Home */
@@ -177,6 +157,7 @@ button{
     padding-left: 15px;
     margin-top: 150px;
     width: 100%;
+    height: 100%;
 }
 .home-text h1{
     font-size: 55px;
@@ -200,7 +181,6 @@ button{
 }
 
 /* About */
-
 .about-text{
     width: 100%;
     padding: 0 15px;
@@ -212,8 +192,8 @@ button{
     margin: 20px 0;
 }
 .about-text .skills-item{
-    background-color: var(--gray-alpha-40);
-    border: 1px solid var(--gray-alpha-25);
+    background-color: var(--black-alpha-25);
+    border: 1px solid var(--white-alpha-40);
     padding: 5px 15px;
     text-transform: capitalize;
     margin: 0 10px 10px 0;
@@ -232,7 +212,7 @@ button{
     border: none;
     text-transform: capitalize;
     display: inline-block;
-    color: var(--blue-dark);
+    color: var(--white);
     font-size: 20px;
     cursor: pointer;
     font-weight: 500;
@@ -251,7 +231,7 @@ button{
     bottom: 0;
     width: 0%;
     height: 1px;
-    background-color: var(--blue-dark);
+    background-color: var(--white);
     transition: width 0.3s ease;
 }
 .about-tabs .tab-item:hover::before{
@@ -370,7 +350,7 @@ button{
 }
 .pp-content{
     margin-top: 5vh;
-    background-color: rgba(255, 255, 255, 0.45);
+    background-color: var(--black-alpha-85);
     padding: 30px;
     border-radius: 30px;
     max-width: 900px;
@@ -398,7 +378,7 @@ button{
     position: absolute;
     right: -40px;
     top: -40px;
-    background-color: var(--white-alpha-25);
+    background-color: var(--black-alpha-85);
     border: 1px solid var(--white-alpha-40);
 }
 .pp-thumbnail img{
@@ -446,13 +426,13 @@ button{
     font-family: inherit;
     font-weight: 400;
     font-size: 16px;
-    background-color: var(--white-alpha-40);
+    background-color: var(--black-alpha-85);
     padding: 0 20px;
-    color: var(--blue-dark);
+    color: var(--white);
     transition: border-color 0.3s ease;
 }
 .contact-form .input-control::placeholder{
-    color: var(--blue-dark);
+    color: var(--white);
     opacity: 0.5;
     font-weight: 300;
 }
@@ -503,14 +483,18 @@ button{
     position: absolute;
     right: -10px;
     top: -10px;
-    background-color: var(--white-alpha-25);
+    background-color: var(--black-alpha-85);
     border: 1px solid var(--white-alpha-40);
 }
 .contact-section,
 .portfolio-section{
+    background: transparent;
     position: relative;
-    background-color: var(--gray-alpha-40);
     padding-bottom: 60px;
+
+    border: 1px solid var(--white-alpha-40);
+    min-height: 90vh;
+    border-radius: 30px;
 }
 
 /* Responsiveness */
