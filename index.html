@@ -1,15 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title> Danny Lei </title>
+  <title> Jian Lei </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-  
-<script src="js/script.js"></script>
+<body>
+  <!-- Main -->
+  <div class="main-container">
+    <!-- Personal Info -->
+    <section class="about-section sec-padding">
+      <div class="container">
+        <div class="grid-container">
+          <div class="home-text">
+            <h1>Jian Lei</h1>
+            <h2>web developer</h2>
+            <a href="#" class="btn btn-contact">contact me</a>
+            <a href="#" class="btn btn-portfolio">portfolio</a>
+          </div>
+
+          <!-- About Me -->
+          <div class="about-text">
+            <div class="row">
+              <div class="section-title">
+                <h2>About me</h2>
+              </div>
+            </div>
+            <p>Hi, my name is Jian! I'm currently attending Seneca College as part of the Computer Programming & Analysis (CPA)
+               advance diploma program. Although I specialize in the front-end side of things, I'm also very interested with back-end 
+               work and have been learning different technologies with hopes of being a full-stack developer. I'm currently learning/
+              building apps with the MERN stack.</p>
+            <h3>skills</h3>
+            <div class="skills">
+              <div class="skills-item">react</div>
+              <div class="skills-item">nodejs</div>
+              <div class="skills-item">expressjs</div>
+              <div class="skills-item">javascript</div>
+              <div class="skills-item">html</div>
+              <div class="skills-item">CSS</div>
+              <div class="skills-item">bootstrap</div>
+              <div class="skills-item">C++</div>
+              <div class="skills-item">Git</div>
+              <div class="skills-item">Unix</div>
+              <div class="skills-item">PL/SQL</div>
+              <div class="skills-item">NoSQL</div>
+              <div class="skills-item">Java*</div>
+              <div class="skills-item">IBM CL*</div>
+              <div class="skills-item">Angular*</div>
+            </div>
+
+            <div class="about-tabs">
+              <button class="tab-item active" type="button" data-target="#education">education</button>
+              <button class="tab-item" type="button" data-target="#experience">experience</button>
+            </div>
+
+            <!-- Education -->
+            <div class="tab-content active" id="education">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2020-2022</span>
+                  <h4>Computer Programming & Analysis - <span>Seneca College</span></h4>
+                  <p>4.0 GPA - Honors List</p>
+                  <p>Relevant Course: OOP345, WEB322, ULI101, DBS311</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="tab-content" id="experience">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2018-2020 (other)</span>
+                  <h4>Freezer Associate - <span>Walmart</span></h4>
+                </div>
+              </div>
+            </div>
+            <a href="cv.pdf" download="jianlei_resume" target="_blank" class="btn">download resume</a>
+          </div>
+
+          <!-- portfolio -->
+          <section class="portfolio-section sec-padding hidden">
+            <button type="button" class="btn portfolio-close"><i class="fas fa-times"></i></i></button>
+            <div class="container">
+              <div class="row">
+                <div class="section-title">
+                  <h2>recent work</h2>
+                </div>
+              </div>
+              <div class="row">
+                <!-- Portfolio Items -->
+                <div class="portfolio-item">
+                  <div class="portfolio-item-thumbnail">
+                    <img src="img-portfolio/hrportal.png" alt="thumbnail for 'HR Portal'">
+                  </div>
+                  <h3 class="portfolio-item-title">HR Portal</h3>
+                  <button class="btn view-project-btn">view project</button>
+                  <div class="portfolio-item-details">
+                    <div class="description">
+                      <p>HR Portal is a full-stack HR CRUD app designed to help businesses manage their employees. The
+                        back-end consist of a Nodejs server using Expressjs to render handlebars views with data from
+                        PostgreSQL and MongoDB. The server also handles authentication, authorization, validation and
+                        errors. UI developed with HTML/CSS + Bootstrap.
+                      </p>
+                    </div>
+                    <div class="general-info">
+                      <ul>
+                        <li>Technologies used: <span>JavaScript, Nodejs, Expressjs, Handlebars, PostreSQL, MongoDB,
+                            Bootstrap</span></li>
+                        <li><span><a href="https://hr-portal-myapp.herokuapp.com" target="_blank">Live app</a></span> |
+                          <span><a href="https://github.com/jianylei/hr-portal" target="_blank">Source Code</a></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <div class="portfolio-item-thumbnail">
+                    <img src="img-portfolio/mylibrary.png" alt="thumbnail for 'myLibrary'">
+                  </div>
+                  <h3 class="portfolio-item-title">myLibrary</h3>
+                  <button class="btn view-project-btn">view project</button>
+                  <div class="portfolio-item-details">
+                    <div class="description">
+                      <p>MyLibrary is a front-end CRUD app aimed to help readers keep track of their reading progress.
+                         As it stands, MyLibrary has full CRUD functionalities integrated with localStorage along with a 
+                         responsive UI for both desktops and mobile.</p>
+                    </div>
+                    <div class="general-info">
+                      <ul>
+                        <li>Technologies used: <span>JavaScript, HTML/CSS, Bootstrap</span></li>
+                        <li><span><a href="https://jianylei.github.io/myLibrary/" target="_blank">Live app</a></span> |
+                          <span><a href="https://github.com/jianylei/myLibrary" target="_blank">Source Code</a></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <div class="portfolio-item-thumbnail">
+                    <img src="img-portfolio/resumebuilder.png" alt="thumbnail for 'Resume Builder'">
+                  </div>
+                  <h3 class="portfolio-item-title">Resume Builder</h3>
+                  <button class="btn view-project-btn">view project</button>
+                  <div class="portfolio-item-details">
+                    <div class="description">
+                      <p>Resume Builder is a front-end app that aims to help eliminate most of the hassle that come with 
+                        building a resume. Utilizing React states and hooks, the app will give the user a live preview of the 
+                        resume as they input their information.</p>
+                    </div>
+                    <div class="general-info">
+                      <ul>
+                        <li>Technologies used: <span>React, JavaScript, HTML/CSS</span></li>
+                        <li><span><a href="https://jianylei.github.io/resume-builder/" target="_blank">Live app</a></span> | <span><a href="https://github.com/jianylei/resume-builder"
+                              target="_blank">Source Code</a></span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <div class="portfolio-item-thumbnail">
+                    <img src="img-portfolio/assemblyline.png" alt="thumbnail for 'Assembly Line'">
+                  </div>
+                  <h3 class="portfolio-item-title">Assembly Line</h3>
+                  <button class="btn view-project-btn">view project</button>
+                  <div class="portfolio-item-details">
+                    <div class="description">
+                      <p>
+                        The assembly line consists of a set of workstations each of which holds a set of stock 
+                        items, which are specific to the station. A line manager moves customer orders along the line filling the orders 
+                        at each station, as requested. Each customer order consists of a list of items that need to be filled. Each station 
+                        processes a queue of orders by filling the next order in the queue if that order requests the station's item and 
+                        that item is in stock. The line manager keeps moving the customer orders from station to station until all orders 
+                        have been processed. Any station that has used all the items in stock cannot fill any more orders. At the end of the 
+                        line orders are either completed or incomplete due to a lack of inventory at one or more stations. The simulator lists 
+                        the completed orders and those that are incomplete once the line manager has finished processing all orders.
+                        <br><br>
+                        Skills and concepts used in this project include but are not limited to: the four principles of OOP, 
+                        the rule of three/five, STL containers and algorithms, class templates, and error handling.</p>
+                    </div>
+                    <div class="general-info">
+                      <ul>
+                        <li>Technologies used: <span>C++</span></li>
+                        <li><span><a href="https://github.com/jianylei/assembly-line-oop345" target="_blank">Source
+                              Code</a></span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <div class="portfolio-item-thumbnail">
+                    <img src="img-portfolio/todo.png" alt="thumbnail for 'Todo List'">
+                  </div>
+                  <h3 class="portfolio-item-title">Todo List</h3>
+                  <button class="btn view-project-btn">view project</button>
+                  <div class="portfolio-item-details">
+                    <div class="description">
+                      <p>Simple to-do list created as an introduction to reactJS. Items can be deleted or marked as completed, which can then be 
+                        filtered through. List is automated saved within the browser with the use of localStorage.</p>
+                    </div>
+                    <div class="general-info">
+                      <ul>
+                        <li>Technologies used: <span>React, JavaScript, HTML/CSS</span></li>
+                        <li><span><a href="https://jianylei.github.io/todo-list-react/" target="_blank">Live app</a></span> | <span><a href="https://github.com/jianylei/todo-list-react"
+                              target="_blank">Source Code</a></span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <div class="portfolio-item-thumbnail">
+                    <img src="img-portfolio/calculator.png" alt="thumbnail for 'Calculator'">
+                  </div>
+                  <h3 class="portfolio-item-title">Calculator</h3>
+                  <button class="btn view-project-btn">view project</button>
+                  <div class="portfolio-item-details">
+                    <div class="description">
+                      <p>Calculator app with integrated keyboard support which offers basic functions such as addition, subtraction, multiplication, and division. </p>
+                    </div>
+                    <div class="general-info">
+                      <ul>
+                        <li>Technologies used: <span>JavaScript, HTML/CSS</span></li>
+                        <li><span><a href="https://hr-portal-myapp.herokuapp.com" target="_blank">Live app</a></span> |
+                          <span><a href="https://github.com/jianylei/hr-portal" target="_blank">Source Code</a></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Contact Section -->
+          <section class="contact-section sec-padding hidden">
+            <button type="button" class="btn section-close"><i class="fas fa-times"></i></i></button>
+            <div class="container">
+              <div class="row">
+                <div class="section-title">
+                  <h2>Contact me</h2>
+                </div>
+              </div>
+              <div class="contact-info">
+                <div class="contact-info-item">
+                  <h3>Email</h3>
+                  <p>jianyonglei@gmail.com</p>
+                </div>
+                <div class="contact-info-item">
+                  <h3>Phone</h3>
+                  <p>(204) 894-2767</p>
+                </div>
+                <div class="contact-info-item">
+                  <h3>follow me</h3>
+                  <div class="social-links">
+                    <a href="https://github.com/jianylei" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jianylei/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Form -->
+              <div class="row">
+                <div class="contact-form">
+                  <form action="https://formspree.io/f/mzbyzqzz" method="POST">
+                    <div class="row">
+                      <div class="input-group">
+                        <input type="text" placeholder="Name" name="name" class="input-control" required>
+                      </div>
+                      <div class="input-group">
+                        <input type="text" placeholder="Email" name="email" class="input-control" required>
+                      </div>
+                      <div class="input-group">
+                        <input type="text" placeholder="Subject" name="subject" class="input-control" required>
+                      </div>
+                      <div class="input-group">
+                        <textarea placeholder="Message" name="message" class="input-control" required></textarea>
+                      </div>
+                      <div class="submit-btn">
+                        <button class="btn" type="submit">send message</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Portfolio Item Details Popup-->
+  <div class="portfolio-popup">
+    <div class="pp-inner">
+      <div class="pp-content">
+        <div class="pp-header">
+          <button type="button" class="btn pp-close"><i class="fas fa-times"></i></i></button>
+          <div class="pp-thumbnail">
+            <img src="img-portfolio/hrportal.png" alt="img of HR Portal">
+          </div>
+          <h3></h3>
+        </div>
+        <div class="pp-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
+
 </html>
