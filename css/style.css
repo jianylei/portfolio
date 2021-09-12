@@ -198,10 +198,14 @@ button{
     text-transform: capitalize;
     margin: 0 10px 10px 0;
     border-radius: 20px;
+    color: var(--white);
 }
 .about-text .skills{
     display: flex;
     flex-wrap: wrap;
+}
+.about-text .skills-item:visited{
+    color: var(--white);
 }
 .about-tabs{
     margin-top: 20px;
