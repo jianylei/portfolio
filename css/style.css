@@ -506,6 +506,7 @@ button{
     .home-text{
         text-align: center;
         margin-top: 20px;
+        padding: 0;
     }
     .contact-info{
         text-align: center;
@@ -532,15 +533,26 @@ button{
     }
 }
 @media(max-width: 575px){
-    
+    .container{
+        padding: 0 20px;
+    }
     .home-text h2{
         font-size: 18px;
     }
     .pp-header h3{
         font-size: 20px;
     }
+    .portfolio-section .container{
+        padding: 0 10px;
+    }
 }
 @media(max-width: 377px){
+    .container{
+        padding: 0 10px;
+    }
+    .portfolio-section .container{
+        padding: 0 5px;
+    }
     .home-text h1{
         font-size: 40px;
     }
