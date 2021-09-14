@@ -1,4 +1,3 @@
-//about tabs
 const tabsContainer = document.querySelector(".about-tabs");
 const aboutSection = document.querySelector(".about-section");
 const aboutText = document.querySelector(".about-text");
@@ -6,6 +5,7 @@ const contactSection = document.querySelector(".contact-section");
 const portfolioSection = document.querySelector(".portfolio-section");
 const portfolioItem = document.querySelector(".pp-item-section");
 
+//active tabs
 tabsContainer.onclick = (e) => {
     if (e.target.classList.contains("tab-item") && !e.target.classList.contains("active")) {
         tabsContainer.querySelector(".active").classList.remove("active");
@@ -15,6 +15,7 @@ tabsContainer.onclick = (e) => {
         aboutSection.querySelector(target).classList.add("active");
     }
 }
+
 //go to contacts
 document.querySelector(".btn-contact").onclick = () => {
     togglePopup("contact");
@@ -49,6 +50,11 @@ document.querySelectorAll(".close").forEach(btn => {
         togglePopup("close");
     }
 })
+
+//back button
+document.querySelector(".back").onclick = () => {
+    togglePopup("back");
+}
 
 function togglePopup(section) {
     if(section === "contact"){
@@ -109,5 +115,10 @@ function togglePopup(section) {
         if (aboutText.classList.contains("hidden")){
             aboutText.classList.toggle("hidden");
         }
+    }
+
+    if(section === "back"){
+        portfolioSection.classList.toggle("hidden")
+        portfolioItem.classList.toggle("hidden");
     }
 }
