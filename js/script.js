@@ -30,7 +30,7 @@ document.onclick = (e) => {
     if (e.target.classList.contains("view-project-btn")) {
         togglePortfolioPopup();
         portfolioItemDetails(e.target.parentElement);
-        document.querySelector(".btn.back").scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+        document.querySelector(".btn.back").scrollIntoView({behavior: "smooth"});
     }
 }
 function togglePortfolioPopup() {
