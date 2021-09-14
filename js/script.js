@@ -29,6 +29,7 @@ document.querySelector(".btn-portfolio").onclick = () => {
 document.onclick = (e) => {
     if (e.target.classList.contains("view-project-btn")) {
         togglePortfolioPopup();
+        window.scrollTo(0,0);
         portfolioItemDetails(e.target.parentElement);
     }
 }

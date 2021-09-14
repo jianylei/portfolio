@@ -439,14 +439,13 @@ button{
     justify-content: center;
     position: absolute;
     right: -15px;
-    top: -10px;
+    top: -15px;
     background-color: var(--black-alpha-85);
     border: 1px solid var(--white-alpha-40);
 }
 .pp-item-section .back{
 
     left: -15px;
-    top: -10px;
 }
 .contact-section,
 .portfolio-section,
