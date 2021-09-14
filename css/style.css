@@ -444,7 +444,6 @@ button{
     border: 1px solid var(--white-alpha-40);
 }
 .pp-item-section .back{
-
     left: -15px;
 }
 .contact-section,
@@ -526,5 +525,13 @@ button{
     .contact-info-item h3,
     .portfolio-item h3{
         font-size: 18px;
+    }
+    .contact-section .close,
+    .portfolio-section .close,
+    .pp-item-section .close{
+        right: -10px;
+    }
+    .pp-item-section .back{
+        left: -10px;
     }
 }
