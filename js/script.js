@@ -28,6 +28,14 @@ document.querySelector(".btn-portfolio").onclick = () => {
 //portfolio item popup
 document.onclick = (e) => {
     if (e.target.classList.contains("view-project-btn")) {
+        window.scroll(0,0);
+        togglePortfolioPopup();
+        portfolioItemDetails(e.target.parentElement);
+    }
+}
+//mobile popup
+document.ontouchstart = (e) => {
+    if (e.target.classList.contains("view-project-btn")) {
         togglePortfolioPopup();
         portfolioItemDetails(e.target.parentElement);
         document.querySelector(".btn.back").scrollIntoView({behavior: "smooth"});
