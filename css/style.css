@@ -15,8 +15,6 @@
     --black-alpha-25: rgba(36, 36, 36, 0.25);
     --backdrop-filter-blur: blur(5px);
 }
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* Global */
 *{
