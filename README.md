@@ -33,14 +33,3 @@ Vanilla Javascript, HTML, CSS
 <p>
     <img src="demo-ss/detailed.png" width="90%">
 </p>
-
-### Mobile
-<p>
-    <img src="demo-ss/mobile1.jpg" height="400px">
-    <img src="demo-ss/mobile2.jpg" height="400px">
-    <img src="demo-ss/mobile3.jpg" height="400px">
-</p>
-<p>
-    
-</p>
-
