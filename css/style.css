@@ -38,16 +38,6 @@ body{
     -webkit-tap-highlight-color: transparent;
     padding: 0 15px;
 }
-body::before{
-    content: "";
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.12;
-}
 body.hide-scroll{
     overflow-y: hidden;
 }
@@ -68,8 +58,8 @@ ul{
     list-style: none;
 }
 section{
-    background-color: var(--black-alpha-85);
-    border: 1px solid var(--white-alpha-40);
+    background-color: rgba(24, 24, 24, 0.55);
+    border: 1px solid var(--gray-alpha-40);
     min-height: 90vh;
     border-radius: 30px;
     backdrop-filter: var(--backdrop-filter-blur);
@@ -313,7 +303,7 @@ button{
 .portfolio-item-thumbnail{
     padding: 10px;
     background-color: var(--white-alpha-25);
-    border: 1px solid var(--white-alpha-40);
+    border: 1px solid var(--gray-alpha-40);
     border-radius: 10px;
 }
 .portfolio-item-thumbnail img{
@@ -383,8 +373,7 @@ button{
     transition: border-color 0.3s ease;
 }
 .contact-form .input-control::placeholder{
-    color: var(--white);
-    opacity: 0.5;
+    color: var(--gray-alpha-40);
     font-weight: 300;
 }
 .contact-form textarea.input-control{
@@ -437,7 +426,7 @@ button{
     right: -15px;
     top: -15px;
     background-color: var(--black-alpha-85);
-    border: 1px solid var(--white-alpha-40);
+    border: 1px solid var(--gray-alpha-40);
 }
 .pp-item-section .back{
     left: -15px;
@@ -448,8 +437,7 @@ button{
     background: transparent;
     position: relative;
     padding-bottom: 60px;
-
-    border: 1px solid var(--white-alpha-40);
+    border: 1px solid var(--gray-alpha-40);
     border-radius: 30px;
 }
 
